@@ -1,13 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Bellota Text", cursive;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.section-heading {
+  font-size: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  opacity: 0.5;
+  text-shadow: 2rem 2rem 4rem #aaa;
+}
+
+@media (max-width: 1400px) {
+  .section-heading {
+    font-size: 8rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+
+  .section-heading {
+    font-size: 6rem;
+  }
 }
